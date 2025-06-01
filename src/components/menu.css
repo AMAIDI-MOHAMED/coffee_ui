@@ -1,0 +1,59 @@
+.menu-section {
+    padding: 2rem;
+    background-color: #fdfaf6;
+    text-align: center;
+  }
+  
+  .menu-section h2 {
+    font-size: 2.5rem;
+    color: #c99b4b;
+    margin-bottom: 2rem;
+  }
+  
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  
+  .menu-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+  }
+  
+  .menu-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .menu-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .menu-details {
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  .menu-details h3 {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .menu-details h3 span {
+    color: #c99b4b;
+  }
+  
+  .menu-details p {
+    font-size: 1rem;
+    color: #666;
+  }
+  

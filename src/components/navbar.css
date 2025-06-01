@@ -1,0 +1,85 @@
+:root {
+  --bg: #f7f1e8;           
+  --text: #4b2e1e;         
+  --accent: #c99b4b;       
+  --hover: #a25b2a;         
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+/* LOGO */
+.navbar-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--accent);
+  font-family: 'Playfair Display', serif;
+  text-decoration: none;
+}
+
+/* DESKTOP LINKS */
+.navbar-links a {
+  margin-left: 1.5rem;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.navbar-links a:hover {
+  color: var(--hover);
+}
+
+/* HAMBURGER MENU */
+.navbar-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--text);
+}
+
+/* MOBILE MENU */
+.navbar-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 2rem;
+  background: var(--bg);
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 6px;
+}
+.navbar-menu a {
+  padding: 0.5rem 0;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+}
+.navbar-menu a:hover {
+  color: var(--accent);
+}
+
+.navbar-menu.active {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+}
